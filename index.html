@@ -1,7 +1,21 @@
 <html>
   <head>
     <script>
+      var myVar;
+
+function Start() {
+  myVar = setTimeout(function(){ console.log('this website is running to save u') }, 300*1000);
+}
+
+function Stop() {
+  console.log('Stopped');
+  clearTimeout(myVar);
+}
+        
       </script>
   </head>
-  <body><input type="button" value="Start"/></body>
+  <body>
+  <button type="button" onclick="Start()">Start</button>
+    <button type="button" onclick="Stop()">Stop</button>
+  </body>
 </html>
